@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<app-sidebar></app-sidebar>
+<app-header></app-header>
+
+<body>
+  <div class="container">
+    <br>
+    <div class="search-container">
+      <form #newCustomer=ngForm>
+        <div class="panel form-panel" style="margin-top: 40px ">
+          <div class="panel-body">
+            <div class="form-group" [class.has-error]="name.invalid && name.touched ">
+              <label for='name' class="control-lable">Search by Document ID</label>
+              <input type="text" required #name="ngModel" class="form-control" id="name" [(ngModel)]="model.name"
+                name="name">
+            </div>
+          </div>
+          <div class="panel-footer">
+            <input type="submit" class="btn btn-success" (click)="showmodel()" value="Submit">
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">1</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">2</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">3</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">4</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">5</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">6</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">7</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">8</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">9</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">10</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">11</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">12</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">13</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">14</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <p class="number">15</p>
+        <iframe src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel()" width="100%" height="100%"
+          alt="" class="fluid img-thumbnail"></iframe>
+      </div>
+    </div>
+  </div>
+</body>

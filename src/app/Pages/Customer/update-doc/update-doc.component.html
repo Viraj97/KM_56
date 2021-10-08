@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<app-sidebar></app-sidebar>
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-9">
+            <div class="container">
+                <form #updateCustomer=ngForm>
+                    <div class="panel form-panel" style="margin-top: 40px ">
+                        <div class="panel-heading">
+                            <p class="head">Update Document Details</p>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for='name'>Document ID</label>
+                                <input type="text" class="form-control" id="nic" required [(ngModel)]="model.NIC"
+                                    name="nic">
+                            </div>
+                            <div class="form-group">
+                                <label for='name'>Document Name</label>
+                                <input type="text" class="form-control" id="name" required [(ngModel)]="model.name"
+                                    name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for='name'>Document Type</label>
+                                <input type="text" class="form-control" id="address" required
+                                    [(ngModel)]="model.address" name="address">
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                                <button type="submit" class="btn btn-success" (click)="method2()">Update</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

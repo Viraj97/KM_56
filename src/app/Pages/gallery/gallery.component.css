@@ -1,0 +1,19 @@
+body {
+    background: #212121;
+    width: 85%;
+    margin-left: 15%;
+    overflow: scroll;
+    height:90vh;
+  }
+  
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+.row{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.number{
+  color: white;
+}

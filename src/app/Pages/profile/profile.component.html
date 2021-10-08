@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<app-sidebar></app-sidebar>
+<app-header></app-header>
+
+<body>
+  <div class="col-sm-9">
+    <div class="container">
+        <form #updateCustomer=ngForm>
+            <div class="panel form-panel" style="margin-top: 40px ">
+                <div class="panel-heading">
+                    <p class="head">User Details</p>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for='name'>User Name</label>
+                        <input type="text" class="form-control" id="nic" required [(ngModel)]="model.NIC"
+                            name="nic" placeholder="Knowledge_Management_User1">
+                    </div>
+                    <div class="form-group">
+                        <label for='name'>User ID</label>
+                        <input type="text" class="form-control" id="name" required [(ngModel)]="model.name"
+                            name="name" placeholder="KM001">
+                    </div>
+                </div>
+                <div class="panel-footer">
+                        <button type="submit" class="btn btn-success" (click)="method2()">Update</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">1</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">2</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">3</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">4</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">5</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">6</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">7</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3"><p class="number">8</p>
+            <iframe
+              src="http://www.africau.edu/images/default/sample.pdf" (click)="showmodel2()" width="100%" height="100%" alt="" class="fluid img-thumbnail"></iframe>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
